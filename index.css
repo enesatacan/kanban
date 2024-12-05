@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.app {
+  background-image: linear-gradient(to right, #ff4800, #fc941c);
+}
+.container .main {
+  margin-top: 10%;
+}
+.container .main #links {
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 20px;
+}
+.container .main #links a {
+  border-bottom: 1px solid;
+}
+.container .main #links > .active {
+  border-bottom: 1px solid;
+  font-weight: bolder;
+  color: #152dff;
+}
+.container .main #contents > button {
+  border: 5px solid;
+  background-color: #152dff;
+  color: aliceblue;
+  border-radius: 50%;
+}
+.container .main #contents > button:hover {
+  border: 5px solid;
+  scale: 1.2;
+  background-color: aliceblue;
+  color: #152dff;
+}
+.card {
+  min-width: 360px;
+}
+.card-body {
+  max-width: 360px;
+  min-height: 300px;
+}
+.card-title {
+  font-size: 13px;
+}
+.card-title .moreBtn {
+  border: none;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+.card-title .successMoreBtn {
+  border: none;
+  border-radius: 8px;
+  margin-right: 8px;
+  background-color: #5cb85c;
+}
+.editInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.card-footer .form-control {
+  opacity: 0;
+}
+
+/* mode */
+.container .main #modes .mode {
+  border-radius: 50%;
+}
+.container .main #modes #darkMode {
+  background-color: #161549;
+  color: #e0e0e0;
+}
+.container .main #modes #whiteMode {
+  background-color: #fc941c;
+  color: #e0e0e0;
+}
+body.dark {
+  background-image: linear-gradient(to right, #161549, #024a4d);
+  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+body.dark .container .main #links {
+  background-color: rgb(34, 68, 100);
+}
+body.dark .container .main #links a {
+  color: #a3a3a3;
+}
+body.dark .container .main #links > .active {
+  color: #f1f1f1;
+}
+body.dark .container .main #contents > button {
+  background-color: #012122;
+  color: rgb(70, 93, 114);
+}
+body.dark .container .main #contents > button:hover {
+  background-color: rgb(70, 93, 114);
+  color: #012122;
+}
+body.dark .container .main #contents .card {
+  background-color: #272222;
+  color: #ccc;
+}
+
+body.dark .card-title .successMoreBtn {
+  background-color: #109110;
+}
+body.dark .editInput {
+  border: 1px solid #979797;
+}
+body.dark .card-footer #addTask {
+  color: #ccc;
+}
+
+.container .main #modes #darkMode,
+.container .main #modes #whiteMode,
+.container .main #links,
+.container .main #links a,
+.container .main #links > .active,
+.container .main #contents > button,
+.container .main #contents > button:hover,
+.container .main #contents .card,
+.card-title .successMoreBtn,
+.editInput,
+.card-footer #addTask,
+body.dark .container .main #links,
+body.dark .container .main #links a,
+body.dark .container .main #links > .active,
+body.dark .container .main #contents > button,
+body.dark .container .main #contents > button:hover,
+body.dark .container .main #contents .card,
+body.dark .card-title .successMoreBtn,
+body.dark .editInput,
+body.dark .card-footer #addTask {
+  /* Ortak geçiş sınıfı */
+  transition: 0.5s ease-in-out;
+}
